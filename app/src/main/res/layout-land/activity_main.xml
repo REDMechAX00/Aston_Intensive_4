@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.redmechax00.astonintensive4.views.clock.RoundClockView
+        android:id="@+id/main_clock"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/clock_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/main_settings_container"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/main_settings_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/main_clock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/main_btn_random_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin"
+            android:text="@string/text_btn_random_color" />
+
+        <TextView
+            android:id="@+id/main_label_sec"
+            style="@style/ThemeLabelNormalLand"
+            android:layout_marginTop="@dimen/app_margin"
+            android:text="@string/text_second_hand_length" />
+
+        <SeekBar
+            android:id="@+id/main_seek_bar_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin" />
+
+        <TextView
+            android:id="@+id/main_label_min"
+            style="@style/ThemeLabelNormalLand"
+            android:text="@string/text_minute_hand_length" />
+
+        <SeekBar
+            android:id="@+id/main_seek_bar_min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin" />
+
+        <TextView
+            android:id="@+id/main_label_hour"
+            style="@style/ThemeLabelNormalLand"
+            android:text="@string/text_hour_hand_length" />
+
+        <SeekBar
+            android:id="@+id/main_seek_bar_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

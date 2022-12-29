@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aston Intensive 4</string>
+    <string name="text_rounded_clock_canvas_desc">Rounded Clock</string>
+    <string name="text_minute_hand_length">Minute hand length</string>
+    <string name="text_hour_hand_length">Hour hand length</string>
+    <string name="text_second_hand_length">Second hand length</string>
+    <string name="text_btn_random_color">Random color</string>
+</resources>
